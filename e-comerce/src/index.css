@@ -1,22 +1,192 @@
-body {
+/* ===== VARIABLES DE COLOR ===== */
+:root {
+  --primary-violet: #6D28D9;
+  --violet-light: #8B5CF6;
+  --violet-dark: #5B21B6;
+  --aqua-green: #0E7490;
+  --aqua-light: #06B6D4;
+  --navy-blue: #1E3A8A;
+  --navy-light: #3B82F6;
+  --white: #FFFFFF;
+  --gray-light: #F8FAFC;
+  --gray: #64748B;
+  --gray-dark: #334155;
+  --success: #10B981;
+  --error: #EF4444;
+}
+
+/*Estilo Base*/
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f8f9fa;
+  line-height: 1.6;
+  color: var(--gray-dark);
+  background: linear-gradient(135deg, var(--gray-light) 0%, #EFF6FF 100%);
+  min-height: 100vh;
 }
 
 #root {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-* {
-  box-sizing: border-box;
+.App {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
+/*Cod Estilo*/
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: 'Fira Code', 'Monaco', 'Cascadia Code', 'Roboto Mono', 'Courier New',
     monospace;
+  background: linear-gradient(135deg, #F1F5F9 0%, #E2E8F0 100%);
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  border: 1px solid rgba(139, 92, 246, 0.1);
+  color: var(--primary-violet);
+  font-size: 0.9em;
+  font-weight: 500;
 }
+
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--primary-violet) 0%, var(--navy-blue) 100%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, var(--violet-light) 0%, var(--navy-light) 100%);
+}
+
+/*Interacciones*/
+a {
+  color: var(--primary-violet);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--violet-light);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/*Seleccion*/
+::selection {
+  background-color: rgba(109, 40, 217, 0.2);
+  color: var(--navy-blue);
+}
+
+::-moz-selection {
+  background-color: rgba(109, 40, 217, 0.2);
+  color: var(--navy-blue);
+}
+
+/*focus state*/
+*:focus {
+  outline: 2px solid var(--primary-violet);
+  outline-offset: 2px;
+}
+
+/*TRANSICIONES SUAVES*/
+* {
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ===== MEJORAS DE TIPOGRAFÍA ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--navy-blue);
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+/* ===== ESTILOS PARA BOTONES POR DEFECTO ===== */
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* ===== ESTILOS PARA INPUTS POR DEFECTO ===== */
+input, textarea, select {
+  font-family: inherit;
+  border: 2px solid #E2E8F0;
+  border-radius: 8px;
+  padding: 0.75rem;
+  transition: all 0.3s ease;
+  background: var(--white);
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--primary-violet);
+  box-shadow: 0 0 0 3px rgba(109, 40, 217, 0.1);
+}
+
+/* ===== ANIMACIONES SUAVES ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===== CLASES DE UTILIDAD ===== */
+.text-violet {
+  color: var(--primary-violet);
+}
+
+.text-aqua {
+  color: var(--aqua-green);
+}
+
+.text-navy {
+  color: var(--navy-blue);
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, var(--primary-violet) 0%, var(--navy-blue) 100%);
+}
+

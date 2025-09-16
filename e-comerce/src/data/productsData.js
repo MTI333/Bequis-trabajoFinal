@@ -1,21 +1,21 @@
 export const products = [
   {
     id: 1,
-    name: "Smartphone XYZ",
+    name: "Iphone 16 Pro",
     price: 599.99,
     stock: 15,
     code: "SMXYZ2023",
-    description: "El último smartphone con todas las características avanzadas.",
-    image: "https://via.placeholder.com/300x300?text=Smartphone"
+    description: "Iphone 16 pro last release.",
+    image: "public/img/iphone16pro.jpeg"
   },
   {
     id: 2,
-    name: "Laptop Ultra",
+    name: "Asus Rog Strix G16",
     price: 1299.99,
     stock: 8,
     code: "LAPULT2023",
     description: "Potente laptop para trabajo y gaming.",
-    image: "https://via.placeholder.com/300x300?text=Laptop"
+    image: "public/img/laptop.jpg"
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const products = [
     stock: 25,
     code: "AURBT2023",
     description: "Auriculares inalámbricos con cancelación de ruido.",
-    image: "https://via.placeholder.com/300x300?text=Auriculares"
+    image: "public/img/Airpods.jpeg"
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ export const products = [
     price: 199.99,
     stock: 12,
     code: "SWPRO2023",
-    description: "Reloj inteligente con monitor de salud avanzado.",
-    image: "https://via.placeholder.com/300x300?text=Smartwatch"
+    description: "Reloj inteligente con monitor de salud avanzado, gps, conexion a smartphone.",
+    image: "public/img/smarthwatch.jpeg"
   }
 ];
