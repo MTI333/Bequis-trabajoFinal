@@ -1,14 +1,15 @@
 import React from 'react';
+import Image from './image';
 
 const ProductDetail = ({ product }) => {
   if (!product) {
     return <div>Producto no encontrado</div>;
   }
-
+console.log(product.img);
   return (
     <div className="product-detail">
       <div className="product-image">
-        <img src={product.image} alt={product.name} />
+        <img src={product.img} alt={product.name}/>
       </div>
       <div className="product-info">
         <h1>{product.name}</h1>

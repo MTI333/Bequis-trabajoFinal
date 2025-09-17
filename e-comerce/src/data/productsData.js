@@ -6,7 +6,7 @@ export const products = [
     stock: 15,
     code: "SMXYZ2023",
     description: "Iphone 16 pro last release.",
-    image: "public/img/iphone16pro.jpeg"
+    img: "img/iphone16pro.jpeg"
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const products = [
     stock: 8,
     code: "LAPULT2023",
     description: "Potente laptop para trabajo y gaming.",
-    image: "public/img/laptop.jpg"
+    img: "img/laptop.jpg"
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const products = [
     stock: 25,
     code: "AURBT2023",
     description: "Auriculares inalámbricos con cancelación de ruido.",
-    image: "public/img/Airpods.jpeg"
+    img: "img/Airpods.jpeg"
   },
   {
     id: 4,
@@ -33,6 +33,6 @@ export const products = [
     stock: 12,
     code: "SWPRO2023",
     description: "Reloj inteligente con monitor de salud avanzado, gps, conexion a smartphone.",
-    image: "public/img/smarthwatch.jpeg"
+    img: "img/smarthwatch.jpeg"
   }
 ];

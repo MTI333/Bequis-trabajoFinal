@@ -413,3 +413,14 @@ body {
   content: '✗';
   color: var(--error);
 }
+.product-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
